@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy Pantry Dashboard</title>
+    <link rel="stylesheet" href="./assets/dashboard.css" />
+  </head>
+  <body>
+    <main class="dashboard-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Andy Pantry</p>
+          <h1>Search what you saved.</h1>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <input id="search-input" class="search-input" type="search" placeholder="Search saved products" />
+        <div class="filter-row">
+          <div id="filter-chips" class="chip-group"></div>
+          <label class="sort-select">
+            <span>Sort</span>
+            <select id="sort-select">
+              <option value="recent">Most recent</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="price-asc">Price: low to high</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section id="empty-state" class="empty-state hidden">
+        <h2>Your Pantry is empty.</h2>
+        <p>Start by saving products from pages you already browse.</p>
+        <ul>
+          <li>Save a fashion item from Musinsa.</li>
+          <li>Save a living product from a YouTube find.</li>
+          <li>Save a gift candidate to test retrieval later.</li>
+        </ul>
+      </section>
+
+      <section id="grid" class="card-grid"></section>
+    </main>
+
+    <aside id="drawer" class="drawer hidden">
+      <div class="drawer-backdrop" data-close-drawer="true"></div>
+      <div class="drawer-panel">
+        <button class="drawer-close" data-close-drawer="true">Close</button>
+        <div id="drawer-content"></div>
+      </div>
+    </aside>
+
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>

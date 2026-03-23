@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy Pantry</title>
+    <link rel="stylesheet" href="./assets/popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="popup-header">
+        <p class="eyebrow">Andy Pantry</p>
+        <h1>Save now. Find later.</h1>
+      </header>
+
+      <section id="status-banner" class="status-banner neutral">
+        Loading current page...
+      </section>
+
+      <section id="candidate-card" class="candidate-card">
+        <div class="candidate-media">
+          <img id="candidate-image" alt="Product preview" />
+        </div>
+        <div class="candidate-body">
+          <p id="candidate-price" class="candidate-price">Price unknown</p>
+          <p id="candidate-merchant" class="candidate-merchant">Merchant</p>
+          <h2 id="candidate-title" class="candidate-title">Untitled page</h2>
+          <div class="field-inline">
+            <label for="candidate-category-select">Category</label>
+            <select id="candidate-category-select" class="category-select"></select>
+          </div>
+          <div class="chip-row">
+            <span id="candidate-tag-1" class="chip subtle hidden"></span>
+            <span id="candidate-tag-2" class="chip subtle hidden"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="unsupported-card" class="unsupported-card hidden">
+        <h2>This page is hard to parse.</h2>
+        <p>You can still save the link and review it later in Pantry.</p>
+      </section>
+
+      <section id="duplicate-note" class="duplicate-note hidden">
+        <h2>This item may already be in Pantry.</h2>
+        <p>Save again if you still want another entry, or open Pantry to review the existing one.</p>
+      </section>
+
+      <footer class="popup-actions">
+        <button id="save-button" class="button primary">Save to Pantry</button>
+        <button id="open-dashboard-button" class="button secondary hidden">Open Pantry</button>
+        <button id="continue-button" class="button ghost hidden">Keep browsing</button>
+      </footer>
+    </main>
+
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>
