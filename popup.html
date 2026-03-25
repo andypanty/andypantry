@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andy Pantry</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./assets/popup.css" />
   </head>
   <body>
     <main class="popup-shell">
       <header class="popup-header">
-        <p class="eyebrow">Andy Pantry</p>
+        <div class="brand-lockup">
+          <img class="brand-mark" src="./assets/favicon.svg" alt="" />
+          <p class="eyebrow">Andy Pantry</p>
+        </div>
         <h1>Save now. Find later.</h1>
       </header>
 
@@ -37,13 +41,13 @@
       </section>
 
       <section id="unsupported-card" class="unsupported-card hidden">
-        <h2>This page is hard to parse.</h2>
-        <p>You can still save the link and review it later in Pantry.</p>
+        <h2 id="unsupported-title">This page is hard to parse.</h2>
+        <p id="unsupported-copy">You can still save the link and review it later in Pantry.</p>
       </section>
 
       <section id="duplicate-note" class="duplicate-note hidden">
-        <h2>This item may already be in Pantry.</h2>
-        <p>Save again if you still want another entry, or open Pantry to review the existing one.</p>
+        <h2 id="duplicate-title">This item may already be in Pantry.</h2>
+        <p id="duplicate-copy">Save again if you still want another entry, or open Pantry to review the existing one.</p>
       </section>
 
       <footer class="popup-actions">

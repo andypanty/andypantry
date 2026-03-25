@@ -4,36 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andy Pantry Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./assets/dashboard.css" />
   </head>
   <body>
     <main class="dashboard-shell">
       <header class="hero">
-        <div>
+        <div class="brand-lockup">
+          <img class="brand-mark" src="./assets/favicon.svg" alt="" />
           <p class="eyebrow">Andy Pantry</p>
-          <h1>Search what you saved.</h1>
         </div>
       </header>
 
       <section class="toolbar">
-        <input id="search-input" class="search-input" type="search" placeholder="Search saved products" />
-        <div class="filter-row">
-          <div id="filter-chips" class="chip-group"></div>
+        <div class="toolbar-top">
+          <input id="search-input" class="search-input" type="search" placeholder="Search saved products" />
+          <div id="density-controls" class="density-switch" aria-label="View density"></div>
           <label class="sort-select">
-            <span>Sort</span>
-            <select id="sort-select">
+            <select id="sort-select" aria-label="Sort products">
               <option value="recent">Most recent</option>
               <option value="price-desc">Price: high to low</option>
               <option value="price-asc">Price: low to high</option>
             </select>
           </label>
         </div>
+
+        <div class="filter-stack">
+          <div id="primary-filter-row-wrapper" class="filter-row-wrapper">
+            <div id="primary-filter-strip" class="filter-strip" aria-label="Primary filters"></div>
+          </div>
+          <div id="category-filter-row-wrapper" class="filter-row-wrapper">
+            <div id="category-filter-strip" class="filter-strip" aria-label="Category filters"></div>
+          </div>
+        </div>
       </section>
 
       <section id="empty-state" class="empty-state hidden">
-        <h2>Your Pantry is empty.</h2>
-        <p>Start by saving products from pages you already browse.</p>
-        <ul>
+        <h2 id="empty-title">Your Pantry is empty.</h2>
+        <p id="empty-copy">Start by saving products from pages you already browse.</p>
+        <ul id="empty-list">
           <li>Save a fashion item from Musinsa.</li>
           <li>Save a living product from a YouTube find.</li>
           <li>Save a gift candidate to test retrieval later.</li>
