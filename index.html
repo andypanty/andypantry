@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy Pantry | Save now, find later</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./config.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div id="publish-warning" class="publish-warning" hidden>
+        Replace the placeholder values in <code>site/config.js</code> before publishing this page.
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">AP</span>
+          <span class="brand-copy">
+            <strong id="site-name">Andy Pantry</strong>
+            <span>Save now, find later</span>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+          <a data-link="support" href="./support.html">Support</a>
+          <a data-link="privacy" href="./privacy.html">Privacy</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <section class="card hero-main">
+          <p class="eyebrow">Retrieval-first Shopping Extension</p>
+          <h1>좋은 제품, 이제 계정에 담아두세요.</h1>
+          <p class="lede">
+            웹에서 발견한 제품을 저장하고, 나중에 검색으로 다시 찾는 가장 정돈된 방법.
+            Google 로그인으로 나만의 Pantry 흐름을 이어가세요.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" data-store-link href="#">Chrome에 추가하기</a>
+            <a class="button secondary" href="#how">작동 방식 보기</a>
+          </div>
+        </section>
+
+        <aside class="card hero-side">
+          <div class="mini-note">
+            <strong>Save</strong>
+            <p>웹에서 본 제품을 바로 담아두세요.</p>
+          </div>
+          <div class="mini-note">
+            <strong>Organize</strong>
+            <p>라벨, 카테고리, 메모로 나중에 찾기 쉬운 구조를 만듭니다.</p>
+          </div>
+          <div class="mini-note">
+            <strong>Retrieve</strong>
+            <p>선물, 이사, 세일, 월급날. 필요한 순간 다시 꺼내보세요.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-two">
+        <article class="card section-card">
+          <h2>왜 필요한가요?</h2>
+          <p class="section-copy">
+            좋은 제품을 발견해도 스크린샷, 카카오톡, 탭, 장바구니에 흩어져 있으면 나중에 다시 찾기 어렵습니다.
+            Andy Pantry는 이 문제를 해결하기 위해 만든 retrieval-first shopping extension입니다.
+          </p>
+        </article>
+        <article class="card section-card">
+          <h2>누구를 위한가요?</h2>
+          <ul class="list-clean">
+            <li>스크린샷, 카카오톡, 장바구니를 섞어 쓰는 사람</li>
+            <li>선물/세일/이사 시점에 예전에 본 제품을 다시 찾고 싶은 사람</li>
+            <li>저장보다 나중에 다시 찾기가 더 중요한 사람</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="how" class="grid-three">
+        <article class="card section-card">
+          <p class="eyebrow">1. Save</p>
+          <h3>상품 페이지에서 바로 저장</h3>
+          <p class="section-copy">마음에 든 제품을 발견했을 때, 버튼 한 번으로 바로 담아두세요.</p>
+        </article>
+        <article class="card section-card">
+          <p class="eyebrow">2. Organize</p>
+          <h3>라벨과 메모로 정리</h3>
+          <p class="section-copy">카테고리, 라벨, 메모를 바탕으로 나중에 다시 찾기 쉬운 구조를 만듭니다.</p>
+        </article>
+        <article class="card section-card">
+          <p class="eyebrow">3. Retrieve</p>
+          <h3>필요한 순간 다시 찾기</h3>
+          <p class="section-copy">Pantry에서 검색과 필터로 필요한 순간 바로 꺼내보세요.</p>
+        </article>
+      </section>
+
+      <section class="grid-two">
+        <article class="card section-card">
+          <h2>Account-linked Pantry</h2>
+          <p class="section-copy">
+            Google 로그인으로 내 Pantry를 계정에 연결하고, 저장한 제품을 더 일관되게 관리할 수 있습니다.
+            Andy Pantry는 복잡한 쇼핑 플랫폼이 아니라, 지금 저장하고 나중에 다시 찾는 흐름에 집중합니다.
+          </p>
+        </article>
+        <article class="card section-card">
+          <h2>지금 자신 있게 말하는 것</h2>
+          <ul class="list-clean">
+            <li>Google 로그인 기반 개인 Pantry</li>
+            <li>저장 후 검색/필터/정리 경험</li>
+            <li>retrieval-first workflow</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="faq" class="card section-card">
+        <h2>FAQ</h2>
+        <div class="stack">
+          <div class="faq-item">
+            <h3>Andy Pantry는 무엇인가요?</h3>
+            <p>웹에서 본 제품이나 페이지를 저장하고, 나중에 검색으로 다시 찾기 쉽게 정리해주는 Chrome Extension입니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Google 로그인은 왜 필요한가요?</h3>
+            <p>개인 Pantry를 계정에 연결하고 저장한 내용을 더 일관되게 관리하기 위해 사용합니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>저장한 내용은 어디에 보관되나요?</h3>
+            <p>기기 로컬 캐시와 계정 기준 저장 흐름을 함께 사용합니다. 자세한 내용은 privacy page에 설명합니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>저장이 안 되면 어떻게 하나요?</h3>
+            <p>페이지를 새로고침한 뒤 다시 시도하고, 여전히 문제가 있으면 support email로 문의해 주세요.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Copyright <span id="current-year"></span> Andy Pantry</p>
+        <nav>
+          <a data-store-link href="#">Chrome에 추가하기</a>
+          <a data-link="privacy" href="./privacy.html">Privacy</a>
+          <a data-link="support" href="./support.html">Support</a>
+          <a id="support-email-link" href="#"><span id="support-email-text">[support-email-placeholder]</span></a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

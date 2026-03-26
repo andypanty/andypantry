@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy Pantry Support</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./config.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div id="publish-warning" class="publish-warning" hidden>
+        Replace the placeholder values in <code>site/config.js</code> before publishing this page.
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">AP</span>
+          <span class="brand-copy">
+            <strong id="site-name">Andy Pantry</strong>
+            <span>Support</span>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="./index.html">Home</a>
+          <a data-link="privacy" href="./privacy.html">Privacy</a>
+        </nav>
+      </header>
+
+      <section class="card section-card">
+        <p class="eyebrow">Support</p>
+        <h1>설치, 로그인, 저장, sync 관련 안내</h1>
+        <p class="lede">launch 직후 반복 문의를 빠르게 흡수하기 위한 최소 support page 초안입니다.</p>
+      </section>
+
+      <section class="grid-two">
+        <article class="card section-card">
+          <h2>Google 로그인은 왜 필요한가요?</h2>
+          <p class="section-copy">개인 Pantry를 계정에 연결하고 저장한 내용을 더 일관되게 관리하기 위해 사용합니다.</p>
+        </article>
+        <article class="card section-card">
+          <h2>로그인하지 않으면 무엇이 제한되나요?</h2>
+          <p class="section-copy">Pantry item 저장과 수정은 로그인 뒤에만 가능합니다. 다만 일부 로컬 보기 설정은 기기에서 계속 바꿀 수 있습니다.</p>
+        </article>
+      </section>
+
+      <section class="card section-card">
+        <h2>자주 묻는 문제</h2>
+        <div class="stack">
+          <div class="faq-item">
+            <h3>저장이 안 되면 어떻게 하나요?</h3>
+            <p>Google 로그인 상태인지, 현재 페이지를 새로고침했는지, 같은 페이지에서 반복 재현되는지 먼저 확인해 주세요.</p>
+          </div>
+          <div class="faq-item">
+            <h3>sync가 안 되는 것 같아요</h3>
+            <p>Settings에서 Signed in 상태인지, Last sync가 표시되는지, Conflict 또는 Error 상태가 보이는지 먼저 확인해 주세요.</p>
+          </div>
+          <div class="faq-item">
+            <h3>conflict는 무엇인가요?</h3>
+            <p>로컬 상태와 서버 상태가 모두 바뀌었을 때 자동으로 덮어쓰지 않기 위한 안전 장치입니다. Pull remote 또는 Overwrite remote를 직접 선택합니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>데이터를 삭제할 수 있나요?</h3>
+            <p>Pantry 안에서 저장 아이템을 직접 수정하거나 삭제할 수 있습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section-card">
+        <h2>문의할 때 함께 보내주세요</h2>
+        <ul class="list-clean">
+          <li>문제 페이지 URL</li>
+          <li>에러 문구</li>
+          <li>스크린샷</li>
+          <li>Settings 화면의 auth/sync 상태</li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>문의: <a id="support-email-link" href="#"><span id="support-email-text">[support-email-placeholder]</span></a></p>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a data-link="privacy" href="./privacy.html">Privacy</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
